@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-subbuild\CMakeFiles\3170ac01493efa97b1eee446190f7720\stb-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-subbuild\CMakeFiles\3170ac01493efa97b1eee446190f7720\stb-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-subbuild\CMakeFiles\3170ac01493efa97b1eee446190f7720\stb-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-subbuild\CMakeFiles\3170ac01493efa97b1eee446190f7720\stb-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-subbuild\CMakeFiles\3170ac01493efa97b1eee446190f7720\stb-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-subbuild\CMakeFiles\3170ac01493efa97b1eee446190f7720\stb-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-subbuild\CMakeFiles\3170ac01493efa97b1eee446190f7720\stb-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-subbuild\CMakeFiles\3170ac01493efa97b1eee446190f7720\stb-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-subbuild\CMakeFiles\abf4dc0c5027738c5cd78fadbe492e92\stb-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-subbuild\CMakeFiles\d630b5a06a07b8d2e1bce6ea02ec203b\stb-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-subbuild\CMakeFiles\stb-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E57C15B7-1348-32F7-AEAF-D410489FF7A8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

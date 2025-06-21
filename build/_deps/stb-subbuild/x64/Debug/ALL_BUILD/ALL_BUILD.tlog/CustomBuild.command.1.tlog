@@ -1,0 +1,10 @@
+^C:\USERS\LUCASNUNES\JOGODASCORES\BUILD\_DEPS\STB-SUBBUILD\CMAKELISTS.TXT
+setlocal
+C:\msys64\mingw64\bin\cmake.exe -SC:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild -BC:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -31,6 +31,7 @@ int setupShader();
 int setupGeometry();
 void eliminarSimilares(float tolerancia);
 
+
 // Defina as dimensões e a janela 
 const GLuint WIDTH = 800, HEIGHT = 600;
 const GLuint ROWS = 6, COLS = 8;
@@ -46,6 +47,7 @@ float offsetY = (HEIGHT - totalGridHeight) / 2.0f;
 int pontuacao = 0;
 int tentativas = 0;
 const int maxTentativas = 10;
+bool fimDeJogo = false;
 
 const GLchar *vertexShaderSource = R"(
 #version 400
@@ -85,6 +87,32 @@ int iSelected = -1;
 
 // Criação da grid de quadrados
 Quad grid[ROWS][COLS];
+
+void resetGame() {
+	pontuacao = 0;
+	tentativas= 0;
+	iSelected = -1;
+	//Recriar a grid de quadrados com novas cores
+	for (int i = 0; i < ROWS; i++) {
+		for (int j = 0; j < COLS;  j++) 
+		{
+			Quad quad;
+			quad.position = vec3(
+				offsetX + j * RECT_WIDTH + RECT_WIDTH / 2.0f,
+				offsetY + i * RECT_HEIGHT + RECT_HEIGHT / 2.0f,
+				0.0f
+			);
+			quad.dimensions = vec3(RECT_WIDTH, RECT_HEIGHT, 1.0f);
+			float r, g, b;
+			r = (float)(rand() % 256) / 255.0f;
+			g = (float)(rand() % 256) / 255.0f;
+			b = (float)(rand() % 256) / 255.0f;
+			quad.color = vec3(r, g, b);
+			quad.eliminated = false;
+			grid[i][j] = quad;
+		}
+	}
+}
 
 // Função MAIN
 int main()
@@ -138,9 +166,9 @@ int main()
             );
 			quad.dimensions = vec3(RECT_WIDTH, RECT_HEIGHT, 1.0f);
 			float r, g, b;
-			r = rand() % 256 / 255.0;
-			g = rand() % 256 / 255.0;
-			b = rand() % 256 / 255.0;
+			r = (float)(rand() % 256) / 255.0f;
+			g = (float)(rand() % 256) / 255.0f;
+			b = (float)(rand() % 256) / 255.0f;
 			quad.color = vec3(r, g, b);
 			quad.eliminated = false;
 			grid[i][j] = quad;
@@ -161,9 +189,19 @@ int main()
 
 	// Loop da aplicação - "game loop"
 	while (!glfwWindowShouldClose(window))
-	{
-		// Checa se houveram eventos de input (key pressed, mouse moved etc.) e chama as funções de callback correspondentes
-		glfwPollEvents();
+{
+    glfwPollEvents();
+
+    // Remova este bloco, ou altere assim:
+    if (fimDeJogo) {
+        // Se o usuário apertou 'R', resetGame() já colocou fimDeJogo = false
+        // Portanto, só pula o loop se fimDeJogo ainda for true
+        if (fimDeJogo)
+        {
+            glfwSwapBuffers(window);
+            continue;
+        }
+    }
 
 		// Limpa o buffer de cor
 		glClearColor(0.0f, 0.0f, 0.0f, 1.0f); // cor de fundo
@@ -214,26 +252,29 @@ int main()
                 acabou = false;
 
     if (tentativas >= maxTentativas || acabou) {
-		//saída da mensagem em português corretamente
-        cout << "\n==============================" << endl;
-		cout << "         FIM DE JOGO!         " << endl;
-		cout << "==============================" << endl;
-		cout << "Pontuacao final: " << pontuacao << endl;
-		cout << "Obrigada por jogar!!\n" << endl;
-        glfwSetWindowShouldClose(window, GL_TRUE);
-    }
+    cout << "\n==============================" << endl;
+    cout << "         FIM DE JOGO!         " << endl;
+    cout << "==============================" << endl;
+    cout << "Pontuacao final: " << pontuacao << endl;
+    cout << "Obrigada por jogar!!\n" << endl;
+    // glfwSetWindowShouldClose(window, GL_TRUE);
+    fimDeJogo = false;
+	}
 	}
 	glfwTerminate();
 	return 0;
 }
 
-// Função de callback de teclado - só pode ter uma instância (deve ser estática se
-// estiver dentro de uma classe) - É chamada sempre que uma tecla for pressionada
-// ou solta via GLFW
+// Função de callback de teclado para detectar a tecla de reinício
 void key_callback(GLFWwindow *window, int key, int scancode, int action, int mode)
 {
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, GL_TRUE);
+		//reiniciar o jogo ao pressionar a tecla "R"
+	if (key == GLFW_KEY_R && action == GLFW_PRESS) {
+		resetGame();
+		cout << "Jogo Reiniciado!" << endl;
+	}
 }
 //  O código fonte do vertex e fragment shader está nos arrays vertexShaderSource e
 //  fragmentShader source no inicio deste arquivo

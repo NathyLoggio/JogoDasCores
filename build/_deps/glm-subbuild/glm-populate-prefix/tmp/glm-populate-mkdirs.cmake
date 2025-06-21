@@ -18,7 +18,7 @@ file(MAKE_DIRECTORY
   "C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp"
 )
 
-set(configSubDirs )
+set(configSubDirs Debug)
 foreach(subDir IN LISTS configSubDirs)
     file(MAKE_DIRECTORY "C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/${subDir}")
 endforeach()

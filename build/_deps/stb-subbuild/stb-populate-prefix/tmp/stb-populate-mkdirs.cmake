@@ -18,7 +18,7 @@ file(MAKE_DIRECTORY
   "C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp"
 )
 
-set(configSubDirs )
+set(configSubDirs Debug)
 foreach(subDir IN LISTS configSubDirs)
     file(MAKE_DIRECTORY "C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/${subDir}")
 endforeach()

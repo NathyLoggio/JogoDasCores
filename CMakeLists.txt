@@ -26,7 +26,7 @@ FetchContent_Declare(
   GIT_TAG master
 )
 
-FetchContent_MakeAvailable(stb)
+FetchContent_MakeAvailable(glfw glm stb)
 
 # Verifica se glad.c está no lugar certo
 set(GLAD_C_FILE "${CMAKE_SOURCE_DIR}/common/glad.c")
