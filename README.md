@@ -26,3 +26,9 @@ Melhorei as mensagens exibidas no terminal, deixando o fim de jogo mais bonito e
 Segui as orientações do enunciado, utilizando exclusivamente recursos do OpenGL moderno (OpenGL 3.3+), VBO, VAO, shaders (GLSL) e uniforms, sem utilizar comandos das versões antigas do OpenGL.
 
 **Os detalhes de cada modificação, os pontos principais do código alterado estão sinalizados com comentários ou podem ser encontrados nas funções main, mouse_button_callback e eliminarSimilares.**
+
+## Lógica de Reinício do Jogo
+
+O jogo agora permite que o usuário reinicie a partida pressionando a tecla **R** a qualquer momento após o fim do jogo. Ao pressionar "R", todas as variáveis de controle, como pontuação, tentativas e a grade de cores, são reinicializadas, possibilitando um novo jogo sem precisar fechar e abrir a janela. Este comportamento foi implementado utilizando uma função `resetGame()` e a verificação da tecla no callback de teclado (`key_callback`).
+
+## Obrigada
