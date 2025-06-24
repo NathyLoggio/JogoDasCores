@@ -1,8 +1,8 @@
 ^C:\USERS\LUCASNUNES\JOGODASCORES\BUILD\_DEPS\STB-SUBBUILD\CMAKEFILES\3170AC01493EFA97B1EEE446190F7720\STB-POPULATE-MKDIR.RULE
 setlocal
-C:\msys64\mingw64\bin\cmake.exe -Dcfgdir=/Debug -P C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/tmp/stb-populate-mkdirs.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/tmp/stb-populate-mkdirs.cmake
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-mkdir
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -16,9 +16,9 @@ cd C:\Users\LucasNunes\JogoDasCores\build\_deps
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/tmp/stb-populate-gitclone.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/tmp/stb-populate-gitclone.cmake
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-download
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -32,7 +32,7 @@ cd C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-src
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/tmp/stb-populate-gitupdate.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/tmp/stb-populate-gitupdate.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -42,9 +42,9 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd
 ^C:\USERS\LUCASNUNES\JOGODASCORES\BUILD\_DEPS\STB-SUBBUILD\CMAKEFILES\3170AC01493EFA97B1EEE446190F7720\STB-POPULATE-PATCH.RULE
 setlocal
-C:\msys64\mingw64\bin\cmake.exe -E echo_append
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-patch
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -58,9 +58,9 @@ cd C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E echo_append
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-configure
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -74,9 +74,9 @@ cd C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E echo_append
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-build
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -90,9 +90,9 @@ cd C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E echo_append
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-install
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -106,9 +106,9 @@ cd C:\Users\LucasNunes\JogoDasCores\build\_deps\stb-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E echo_append
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-test
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-test
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -118,11 +118,11 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd
 ^C:\USERS\LUCASNUNES\JOGODASCORES\BUILD\_DEPS\STB-SUBBUILD\CMAKEFILES\ABF4DC0C5027738C5CD78FADBE492E92\STB-POPULATE-COMPLETE.RULE
 setlocal
-C:\msys64\mingw64\bin\cmake.exe -E make_directory C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/CMakeFiles/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/CMakeFiles/Debug
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/CMakeFiles/Debug/stb-populate-complete
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/CMakeFiles/Debug/stb-populate-complete
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-done
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate-prefix/src/stb-populate-stamp/Debug/stb-populate-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -140,7 +140,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd
 ^C:\USERS\LUCASNUNES\JOGODASCORES\BUILD\_DEPS\STB-SUBBUILD\CMAKELISTS.TXT
 setlocal
-C:\msys64\mingw64\bin\cmake.exe -SC:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild -BC:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild -BC:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

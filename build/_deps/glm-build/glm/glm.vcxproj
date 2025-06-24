@@ -239,7 +239,7 @@
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-src/glm/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\msys64\mingw64\bin\cmake.exe -SC:/Users/LucasNunes/JogoDasCores -BC:/Users/LucasNunes/JogoDasCores/build --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-build/glm/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/LucasNunes/JogoDasCores -BC:/Users/LucasNunes/JogoDasCores/build --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-build/glm/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -252,7 +252,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-src/glm/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-C:\msys64\mingw64\bin\cmake.exe -SC:/Users/LucasNunes/JogoDasCores -BC:/Users/LucasNunes/JogoDasCores/build --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-build/glm/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/LucasNunes/JogoDasCores -BC:/Users/LucasNunes/JogoDasCores/build --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-build/glm/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -265,7 +265,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-src/glm/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-C:\msys64\mingw64\bin\cmake.exe -SC:/Users/LucasNunes/JogoDasCores -BC:/Users/LucasNunes/JogoDasCores/build --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-build/glm/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/LucasNunes/JogoDasCores -BC:/Users/LucasNunes/JogoDasCores/build --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-build/glm/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -278,7 +278,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-src/glm/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-C:\msys64\mingw64\bin\cmake.exe -SC:/Users/LucasNunes/JogoDasCores -BC:/Users/LucasNunes/JogoDasCores/build --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-build/glm/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/LucasNunes/JogoDasCores -BC:/Users/LucasNunes/JogoDasCores/build --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-build/glm/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

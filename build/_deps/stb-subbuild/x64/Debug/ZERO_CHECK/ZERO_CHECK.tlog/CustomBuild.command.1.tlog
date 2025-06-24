@@ -1,6 +1,6 @@
 ^C:\USERS\LUCASNUNES\JOGODASCORES\BUILD\_DEPS\STB-SUBBUILD\CMAKEFILES\D630B5A06A07B8D2E1BCE6EA02EC203B\GENERATE.STAMP.RULE
 setlocal
-C:\msys64\mingw64\bin\cmake.exe -SC:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild -BC:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild -BC:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/LucasNunes/JogoDasCores/build/_deps/stb-subbuild/stb-populate.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

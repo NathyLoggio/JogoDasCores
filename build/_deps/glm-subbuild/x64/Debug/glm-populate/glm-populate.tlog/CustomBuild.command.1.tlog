@@ -1,8 +1,8 @@
 ^C:\USERS\LUCASNUNES\JOGODASCORES\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\FDEB2DBD35621BC7CE564C20762C8AB9\GLM-POPULATE-MKDIR.RULE
 setlocal
-C:\msys64\mingw64\bin\cmake.exe -Dcfgdir=/Debug -P C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/tmp/glm-populate-mkdirs.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/tmp/glm-populate-mkdirs.cmake
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-mkdir
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -16,9 +16,9 @@ cd C:\Users\LucasNunes\JogoDasCores\build\_deps
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/tmp/glm-populate-gitclone.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/tmp/glm-populate-gitclone.cmake
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-download
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -32,7 +32,7 @@ cd C:\Users\LucasNunes\JogoDasCores\build\_deps\glm-src
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/tmp/glm-populate-gitupdate.cmake
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/tmp/glm-populate-gitupdate.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -42,9 +42,9 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd
 ^C:\USERS\LUCASNUNES\JOGODASCORES\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\FDEB2DBD35621BC7CE564C20762C8AB9\GLM-POPULATE-PATCH.RULE
 setlocal
-C:\msys64\mingw64\bin\cmake.exe -E echo_append
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-patch
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -58,9 +58,9 @@ cd C:\Users\LucasNunes\JogoDasCores\build\_deps\glm-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E echo_append
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-configure
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -74,9 +74,9 @@ cd C:\Users\LucasNunes\JogoDasCores\build\_deps\glm-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E echo_append
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-build
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -90,9 +90,9 @@ cd C:\Users\LucasNunes\JogoDasCores\build\_deps\glm-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E echo_append
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-install
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -106,9 +106,9 @@ cd C:\Users\LucasNunes\JogoDasCores\build\_deps\glm-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E echo_append
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-test
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-test
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -118,11 +118,11 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd
 ^C:\USERS\LUCASNUNES\JOGODASCORES\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\A783A63574CDFA7A149107B4D0B7E247\GLM-POPULATE-COMPLETE.RULE
 setlocal
-C:\msys64\mingw64\bin\cmake.exe -E make_directory C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/CMakeFiles/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/CMakeFiles/Debug
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/CMakeFiles/Debug/glm-populate-complete
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/CMakeFiles/Debug/glm-populate-complete
 if %errorlevel% neq 0 goto :cmEnd
-C:\msys64\mingw64\bin\cmake.exe -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-done
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/Debug/glm-populate-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -140,7 +140,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd
 ^C:\USERS\LUCASNUNES\JOGODASCORES\BUILD\_DEPS\GLM-SUBBUILD\CMAKELISTS.TXT
 setlocal
-C:\msys64\mingw64\bin\cmake.exe -SC:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild -BC:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild -BC:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild --check-stamp-file C:/Users/LucasNunes/JogoDasCores/build/_deps/glm-subbuild/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
